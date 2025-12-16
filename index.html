@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Virga | Portfolio</title>
+    <style>
+        /* --- CSS STYLES --- */
+        /* Impostazioni generali per font e colori */
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #4caf50; /* Un verde che richiama logica e produzione */
+            --card-bg: #1e1e1e;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Container per centrare il contenuto */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Sezione Hero (La tua bio) */
+        .hero {
+            padding: 60px 0;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: #a0a0a0;
+            margin-top: 0;
+            font-weight: normal;
+        }
+
+        .bio-text {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            max-width: 700px;
+        }
+
+        /* Sezione Progetti */
+        .section-title {
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">AV.</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="about" class="hero">
+            <h1>Alessandro Virga</h1>
+            <h2>Production Planner | Full-Stack Development Enthusiast</h2>
+            
+            <p class="bio-text">
+                Professionally focused on Production Planning and ERP systems, I channel my passion for logic and optimization into software development. 
+                I love building full-stack applications that solve problems efficiently—just like my spaced-repetition chess trainer.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="project-card">
+                <h3>Spaced-Repetition Chess Trainer</h3>
+                <p>
+                    A full-stack application designed to improve chess skills using spaced-repetition algorithms. 
+                    This project combines logic, database management, and user interface design to create an effective learning tool.
+                </p>
+                <p><em>(Link to repository coming soon)</em></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <footer>
+                <p>&copy; 2025 Alessandro Virga. Built with HTML & CSS.</p>
+            </footer>
+        </section>
+    </div>
+
+</body>
+</html>
