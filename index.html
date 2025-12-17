@@ -119,21 +119,46 @@
         }
 
         /* Stile bottone */
-.btn {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-}
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
 
-.btn:hover {
-    background-color: #388e3c; /* Un verde leggermente più scuro */
-}
+        .btn:hover {
+            background-color: #388e3c; /* Un verde leggermente più scuro */
+        }
+
+        /* Sezione Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px; /* Bordo arrotondato stile "pillola" */
+            font-size: 0.9rem;
+            border: 1px solid var(--accent-color);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-3px); /* Effetto sollevamento */
+            background-color: var(--accent-color);
+            color: #000;
+            cursor: default;
+        }
 
         /* Footer */
         footer {
@@ -166,19 +191,32 @@
                 Professionally focused on Production Planning and ERP systems, I channel my passion for logic and optimization into software development. 
                 I love building full-stack applications that solve problems efficiently—just like my spaced-repetition chess trainer.
             </p>
+            
+        </section>
+        <section id="skills">
+            <h2 class="section-title">Technical Skills & Tools</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Production Planning</span>
+                <span class="skill-tag">ERP Systems</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Logic & Optimization</span>
+                <span class="skill-tag">Project Management</span>
+            </div>
         </section>
 
         <section id="projects">
             <h2 class="section-title">Featured Projects</h2>
-
-<div class="project-card">
-    <h3>Spaced-Repetition Chess Trainer</h3>
-    <p>
-        A full-stack application designed to improve chess skills using spaced-repetition algorithms. 
-        This project combines logic, database management, and user interface design.
-    </p>
-    <a href="#" class="btn">View Code <i class="fab fa-github"></i></a>
-</div>
+            <div class="project-card">
+                <h3>Spaced-Repetition Chess Trainer</h3>
+                <p>
+                    A full-stack application designed to improve chess skills using spaced-repetition algorithms. 
+                    This project combines logic, database management, and user interface design.
+                </p>
+                <a href="#" class="btn">View Code <i class="fab fa-github"></i></a>
+            </div>
         </section>
 
 <section id="contact" style="text-align: center; padding: 60px 0;">
