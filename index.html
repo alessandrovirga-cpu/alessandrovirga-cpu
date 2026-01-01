@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* --- CSS STYLES --- */
+
+        /* Abilita lo scroll fluido */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Stile per l'immagine del profilo */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Ottimizzazione per dispositivi mobili */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
+
         /* Impostazioni generali per font e colori */
         :root {
             --bg-color: #121212;
@@ -184,14 +214,15 @@
         </header>
 
         <section id="about" class="hero">
+            <img src="tua-foto.jpg" alt="Alessandro Virga" class="profile-img">
+    
             <h1>Alessandro Virga</h1>
             <h2>Production Planner | Full-Stack Development Enthusiast</h2>
-            
+    
             <p class="bio-text">
                 Professionally focused on Production Planning and ERP systems, I channel my passion for logic and optimization into software development. 
                 I love building full-stack applications that solve problems efficiently—just like my spaced-repetition chess trainer.
             </p>
-            
         </section>
         <section id="skills">
             <h2 class="section-title">Technical Skills & Tools</h2>
